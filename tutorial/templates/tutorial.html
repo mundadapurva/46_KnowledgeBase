@@ -1,0 +1,16 @@
+{% load static %}
+
+<!DOCTYPE html>
+<body>
+
+    {% for i in videos %}
+    <p>{{i.user}}</p>
+    <p>{{i.owner}}</p>
+    <p>{{i.video.url}}</p>
+    <video width='400' controls>
+    <source src='{% static i.video.url %}'type="video/mp4"></video>
+    <p>{{i.date_uploaded}}</p>
+    {% endfor %}
+
+</body>
+</html>
