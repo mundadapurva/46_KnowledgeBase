@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'embed_video',
+    'embed_video',
     'knowledge_base',
     'blog',
     'project',
@@ -125,7 +125,6 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-STATIC_DIR=os.path.join(BASE_DIR, 'static')
 STATIC_DIR=os.path.join(BASE_DIR, 'static')
 
 # MEDIA_ROOT = os.path.join(BASE_DIR, "")

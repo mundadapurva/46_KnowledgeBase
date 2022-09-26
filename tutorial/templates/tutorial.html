@@ -7,8 +7,8 @@
     <p>{{i.user}}</p>
     <p>{{i.owner}}</p>
     <p>{{i.video.url}}</p>
-    <video width='400' controls>
-    <source src='{% static i.video.url %}'type="video/mp4"></video>
+    <video src='{% static i.video.url %}' type="video/mp4">Not supported</video>
+    <video src='{{i.video.url}}' type="video/mp4">Not supported</video>
     <p>{{i.date_uploaded}}</p>
     {% endfor %}
 
